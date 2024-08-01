@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class basics {
+    public static void main(String[] args) {
+
+        float p;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter The Number ");
+        p=sc.nextFloat();
+        if(p%5==0 && p%3==0)
+        {
+            System.out.println("Divisble by 5 and 3");
+        }
+        else
+        {
+            System.out.println("Not Divisblee by 5 and 3 ");
+        }
+
+    }
+}
