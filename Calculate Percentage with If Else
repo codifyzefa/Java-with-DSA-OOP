@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class basics {
+    public static void main(String[] args) {
+
+        float p;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter The Percentage ");
+        p=sc.nextFloat();
+        if(p>=91 && p<=100)
+        {
+            System.out.println("Excellent");
+        }
+        else if(p>=81 && p<=90)
+        {
+            System.out.println("Very Good");
+        }
+        else if(p>=71 && p<=80)
+        {
+            System.out.println("Good");
+        }
+        else if(p>=61 && p<=70)
+        {
+            System.out.println("Can do Better");
+        }
+        else if(p>=51 && p<=60)
+        {
+            System.out.println("Average");
+        }
+        else if(p>=41 && p<=50)
+        {
+            System.out.println("Below Average");
+        }
+        else if (p<=40)
+        {
+            System.out.println("Fail");
+        }
+
+    }
+}
