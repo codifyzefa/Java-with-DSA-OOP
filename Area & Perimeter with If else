@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class basics {
+    public static void main(String[] args) {
+        int length,breadth;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter The Value Of Area : ");
+        length=sc.nextInt();
+        System.out.println("Enter The value of Breadth ");
+        breadth=sc.nextInt();
+        int  area,pre;
+        area=length*breadth;
+        pre=2*(length+breadth);
+        if(area>pre)
+        {
+            System.out.println("Area is Greater than Perimeter ");
+        }
+        if(pre>area)
+        {
+            System.out.println("Perimeter is Greater than Area");
+        }
+        if(area==pre)
+        {
+            System.out.println("Area is Equal to Perimeter");
+        }
+
+    }
+}
