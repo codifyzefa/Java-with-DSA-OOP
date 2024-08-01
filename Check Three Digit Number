@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class basics {
+    public static void main(String[] args) {
+
+        float p;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter The Number ");
+        p=sc.nextFloat();
+        if(p>99 && p<1000)
+        {
+            System.out.println("Three Digit number ");
+        }
+        else
+        {
+            System.out.println("Not a Three Digit Number ");
+        }
+
+    }
+}
