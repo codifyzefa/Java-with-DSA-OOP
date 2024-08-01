@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class basics {
+    public static void main(String[] args) {
+        int a;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter The Number  : ");
+        a = sc.nextInt();
+        if (a < 0) {
+            a = a * (-1);
+            System.out.println("Absolute Value is " + a);
+        } else {
+            System.out.println("Absolute value is " + a);
+        }
+    }
+}
