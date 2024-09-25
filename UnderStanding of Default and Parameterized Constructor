@@ -1,0 +1,79 @@
+class Shape
+{
+    double height;
+    double width;
+  Shape()
+  {
+    this.height=0;
+    this.width=0;
+  }
+  Shape(double height,double width)
+  {
+    this.height=height;
+    this.width=width;
+  }
+
+    public void setheight(double height)
+    {
+            this.height=height;
+    }
+    public double getheight()
+    {
+        return height;
+    }
+    public void setwidth(double width)
+    {
+           this.width=width;
+    }
+    public double getwidth()
+    {
+        return width;
+    }
+    public void display()
+    {
+        System.out.println("The Height is "+height+ " The Width is "+width);
+    }
+    public double calarea()
+    {
+        return height*width;
+    }
+
+}
+
+
+public class Home {
+    public static void main(String[] args) {
+        Shape A1=new Shape();
+        System.out.println("Functionality of First Object A1");
+        A1.setheight(4.5);
+        A1.setwidth(8.2);
+        A1.display();
+        double c;
+        c=A1.calarea();
+       System.out.format("The Area of First Object is : %.3f\n",c);
+        Shape A2=new Shape();
+        System.out.println("Functionality of Second Object : A2");
+        A2.setheight(7.2);
+        A2.setwidth(5.2);
+        A2.display();
+        
+    double z;
+    z=A2.calarea();
+    System.out.format("The Area of Second Object is : %.2f\n",z);
+    Shape A3=new Shape();
+    System.out.println("Functionality of defalut Constructor ");
+    A3.display();
+    double x;
+    x=A3.calarea();
+    System.out.format("The Area of Third Object is  : %.3f\n",x);
+    Shape A4=new Shape(3.2,4.5);
+    System.out.println("The Functionality of Fourth Object is : ");
+    A4.display();
+    double w;
+    w=A4.calarea();
+    System.out.format("The Area of Fourth Object is : %.3f\n",w);
+
+    }
+}
+
+ 
