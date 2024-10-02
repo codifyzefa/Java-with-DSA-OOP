@@ -1,0 +1,46 @@
+/* This Code is the Property of Codifyzefa... */
+import java.util.*;
+class A 
+{
+    int a;
+
+    public void welcome()
+    {
+        System.out.println("System Command is Welcome ");
+    }
+    public void menu()
+    {
+        System.out.println("welcome into the menu ");
+  
+    }
+}
+
+class B extends A 
+{
+    public void On()
+    {
+        System.out.println("Power on the Phone or Smartphone");
+    }
+    public void App()
+    {
+        System.out.println("Enter into the App Store ");
+    }
+}
+public class practice2 {
+    public static void main(String[] args) {
+        B b = new B();  // Compiled time Polymorphism
+        b.welcome();
+        b.menu();
+        b.On();
+        b.App();
+        /* Dynamic Method Dispatch 
+         * Consider the following Inheritance hierarchy
+         * 
+         * Note : 
+         *        Achieve Run-Time Polmorphism in Java.
+        */
+        A a = new B(); // run-time polymorphism
+        a.welcome(); // this is polymorphism 
+    }
+    
+}
